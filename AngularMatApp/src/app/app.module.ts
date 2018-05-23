@@ -4,10 +4,12 @@ import { MatButtonModule, MatToolbarModule } from '@angular/material';
 
 
 import { AppComponent } from './app.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AboutComponent
   ],
   imports: [BrowserModule,MatButtonModule, MatToolbarModule],
   exports: [MatButtonModule, MatToolbarModule],
