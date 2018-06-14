@@ -1,19 +1,26 @@
 <div class="square">
+	  <div>
 	  <h1>
 	    Login
 	  </h1>
 	  <form [formGroup]="loginForm" novalidate>
 	        <div class="form-group">
-	          <label class="center-block">Name:
+	          <label class="center-block">User Name:
 	            <input class="form-control" formControlName="name">
 	          </label>
-	        </div>
+	         </div>
 	        <div *ngIf="loginForm.controls['name'].invalid && (loginForm.controls['name'].dirty || loginForm.controls['name'].touched)" class="alert alert-danger">
 	            <div *ngIf="loginForm.controls['name'].errors.required">
 	            Name is required.
 	          </div>
 	        </div>
+	        <p>
+	        <div class="form-group">
+	        	<label class="center-block">Password:
+	            <input class="form-control" formControlName="password">
+	          </label>
+	        </div>
 	  </form>
-	<p>Form value: {{ loginForm.value | json }}</p>
-	<p>Form status: {{ loginForm.status | json }}</p>
+	</div>	
+	
 </div>

@@ -50,6 +50,8 @@ import { HeaderComponent } from './header/header.component';
 import { LeftnavComponent } from './leftnav/leftnav.component';
 import { routing } from './app.routing';
 import { BodyComponent } from './body/body.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   exports: [
@@ -89,7 +91,9 @@ import { BodyComponent } from './body/body.component';
     MatToolbarModule,
     MatTooltipModule,
     MatTreeModule,
-  ]
+  ],
+  declarations: [],
+  imports: [LayoutModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule]
 })
 export class MaterialModule {}
 
@@ -101,6 +105,7 @@ export class MaterialModule {}
     HeaderComponent,
     LeftnavComponent,
     BodyComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule,BrowserAnimationsModule,NoopAnimationsModule,MaterialModule,routing,FormsModule, ReactiveFormsModule],
   providers: [],
