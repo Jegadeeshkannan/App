@@ -15,7 +15,6 @@ export class LoginComponent {
     createForm() {
      this.loginForm = this.fb.group({
         name: ['', Validators.required ]
-        
      });
    }
 

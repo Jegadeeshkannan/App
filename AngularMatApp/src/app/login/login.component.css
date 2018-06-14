@@ -1,12 +1,5 @@
 .square {
-  border: solid 2px #e5e5e5;
-  width: 660px;
-  height: 400px;
- text-align: center;
-}
-.loginbox{
-	border: solid 1px #dedeef;
-	 width: 300px;
-  	 height: 300px;
-  	
+  border: solid 2px #f0f;
+  width: 200px;
+  height: 200px;
 }
